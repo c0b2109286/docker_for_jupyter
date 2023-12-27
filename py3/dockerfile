@@ -1,0 +1,34 @@
+FROM python:3.9.13
+ARG DEBIAN_FRONTEND=noninteractive
+
+# JupyterLab関連のパッケージ（いくつかの拡張機能を含む）
+# 必要に応じて、JupyterLabの拡張機能などを追加してください
+RUN python3 -m pip install --upgrade pip \
+&&  pip install --no-cache-dir \
+    black \
+    jupyterlab \
+    jupyterlab_code_formatter \
+    jupyterlab-git \
+    lckr-jupyterlab-variableinspector \
+    jupyterlab_widgets \
+    ipywidgets \
+    import-ipynb
+
+# 基本パッケージ
+# Pythonでよく利用する基本的なパッケージです
+# JupyterLabの動作には影響しないので、必要に応じてカスタマイズしてください
+RUN pip install --no-cache-dir \
+    numpy \
+    pandas \
+    scipy \
+    scikit-learn \
+    pycaret \
+    matplotlib \
+    japanize_matplotlib \
+    mlxtend \
+    seaborn \
+    plotly \
+    requests \
+    beautifulsoup4 \
+    Pillow \
+    opencv-python
