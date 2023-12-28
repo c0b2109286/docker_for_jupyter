@@ -1,1 +1,1 @@
-# jupyter notebookを構築するためのdocker
+# jupyter notebook環境を構築するためのdocker
