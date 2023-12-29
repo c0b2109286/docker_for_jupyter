@@ -33,5 +33,5 @@ RUN pip install --no-cache-dir \
     Pillow \
     opencv-python
 
-RUN apt -y update && apt -y upgrade
 RUN apt -y install libopencv-dev
+RUN apt -y update && apt -y upgrade
