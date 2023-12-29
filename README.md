@@ -3,3 +3,4 @@
 ### 参考資料
 「DockerでJupyterLabの環境を作ろう」
 https://www.idnet.co.jp/column/page_187.html
+(2023/12/25)
